@@ -12,11 +12,11 @@ public class Salarios {
 
 		Scanner input = new Scanner(System.in);
 		double salario;
-
 		double gasto = 0;
+		int quantidadeFuncionarios = 3;
 
 		int i = 0;
-		while (i < 3){
+		while (i < quantidadeFuncionarios){
 			System.out.printf("Digite o salário do %dº funcionário(a): ", i+1);
 			salario = input.nextDouble();
 			gasto = gasto + salario;
@@ -24,6 +24,7 @@ public class Salarios {
 		}
 
 		System.out.printf("O gasto da empresa com salários é: %.2f%n", gasto);
+		System.out.printf("A média salarial da empresa é: %.2f%n", gasto/quantidadeFuncionarios);
 	}
 
 }
